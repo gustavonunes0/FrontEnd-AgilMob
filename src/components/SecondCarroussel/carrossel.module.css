@@ -1,0 +1,113 @@
+#SCarGalery {
+  display: flex;
+  align-items: center;
+}
+
+#SCarImg {
+  width: 56rem;
+  height: 38rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.SCarBtn {
+  width: 4rem;
+  height: 4rem;
+  background-color: #111182;
+  border-radius: 50%;
+  z-index: 7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SCarBtn:hover {
+  cursor: pointer;
+}
+
+#trianguloParaEsquerda {
+  width: 0;
+  height: 0;
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  border-right: 1rem solid white;
+}
+
+#trianguloParaDireita {
+  width: 0;
+  height: 0;
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  border-left: 1rem solid white;
+}
+
+@media only screen and (max-width: 1367px) {
+
+}
+
+@media only screen and (max-width: 1004px) {
+  #SCarImg {
+    width: 30rem;
+    height: 22rem;
+    border-radius: 2rem;
+    object-fit: cover;
+  }
+  
+  .SCarBtn {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #111182;
+    border-radius: 30%;
+    z-index: 7;
+  }
+  
+#trianguloParaEsquerda {
+  width: 0;
+  height: 0;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  border-right: 0.5rem solid white;
+}
+
+#trianguloParaDireita {
+  width: 0;
+  height: 0;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  border-left: 0.5rem solid white;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  #SCarImg {
+    width: 23rem;
+    height: 15rem;
+    border-radius: 2rem;
+    object-fit: cover;
+  }
+  
+  .SCarBtn {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #111182;
+    border-radius: 30%;
+    z-index: 7;
+  }
+  
+#trianguloParaEsquerda {
+  width: 0;
+  height: 0;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  border-right: 0.5rem solid white;
+}
+
+#trianguloParaDireita {
+  width: 0;
+  height: 0;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  border-left: 0.5rem solid white;
+}
+}
