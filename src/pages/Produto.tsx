@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router'; // Import the useRouter hook
 import Head from 'next/head';
 import * as S from '../styles/Produto';
 import NavBar from '@/components/Navbar';
@@ -6,8 +7,24 @@ import Footer from '@/components/Footer';
 import Carrossel from '@/components/SecondCarroussel';
 import axios from 'axios';
 
-const ListaProdutos = () => {
- 
+const Produto = () => {
+    const [product, setProduct] = useState<any>(null); 
+    const router = useRouter(); 
+
+    useEffect(() => {
+        const { id } = router.query;
+        const sampleProductData = {
+            id: id,
+            name: 'Produto Padrão',
+            description: 'Apenas uma descrição teste',
+        };
+        setProduct(sampleProductData);
+    }, [router.query]);
+
+    if (!product) {
+        return <div>Loading...</div>;
+    }
+
     return (
         <>
             <Head>
@@ -19,13 +36,15 @@ const ListaProdutos = () => {
                 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            <NavBar/>
+            <NavBar />
             <S.Main>
-                
+                <h1>{product.name}</h1>
+                <p>{product.description}</p>
+                <p>{product.id}</p>
             </S.Main>
-            <Footer/>
+            <Footer />
         </>
     );
 }
 
-export default ListaProdutos;
+export default Produto;
