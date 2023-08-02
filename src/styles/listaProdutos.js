@@ -13,10 +13,10 @@ export const Main = styled.main`
   background-color: #e6e1dd;
 
   @media screen and (max-width: 1700px) {
-    gap: 3rem;
+    gap: 4rem;
   }
   @media screen and (max-width: 1400px) {
-    padding: 2rem 6rem
+    padding: 2rem 6rem;
     gap: 1rem;
   }
 

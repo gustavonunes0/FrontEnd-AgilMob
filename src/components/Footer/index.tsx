@@ -96,7 +96,7 @@ const Footer = () => {
                             </Link>
                         </S.FooterSubmenuItem>
                         <S.FooterSubmenuItem>
-                            <Link href="/dashboard"
+                            <Link href="/DashBoard"
                                 style={
                                     {
                                         textDecoration: "none",

@@ -19,6 +19,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/ListaProcessos/styles.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/ListaProcessos/styles.js", "src/styles/Produto.js"],
   "exclude": ["node_modules"]
 }
