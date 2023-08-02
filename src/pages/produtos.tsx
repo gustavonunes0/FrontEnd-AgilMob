@@ -21,7 +21,7 @@ const Produtos = () => {
             </Head>
             <NavBar/>
             <S.Main>
-                <S.TipoProdutos>
+                <S.TipoProdutos href='/listaProdutos'>
                     <S.ContainerHover></S.ContainerHover>
                     <img style={{width: '100%', height: '100%', borderRadius: '.5rem'}} src='/Ativo 181.png'/>                
                     <S.SpanProdutos>MESAS</S.SpanProdutos>

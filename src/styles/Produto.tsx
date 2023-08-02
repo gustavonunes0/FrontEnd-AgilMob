@@ -4,26 +4,34 @@ export const Main = styled.main`
   display: grid;
   position: relative;
   margin-top: 7rem;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 30% 30% 30%;
+  justify-items: center;
   align-items: center;
   place-content: center;
-  padding: 2rem 0rem;
+  padding: 2rem 12rem;
   gap: .7rem;
   background-color: #e6e1dd;
 
+  @media screen and (max-width: 1200px) {
+    padding: 2rem 6rem
+  }
   
-  @media screen and (max-width: 600px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem;
+  @media screen and (max-width: 1000px) {
+      grid-template-columns: 50% 50%;
+  }
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
   }
 `;
 
-export const TipoProdutos = styled.a`
-  width: 100%;
-  height: auto;
+export const Produtos = styled.a`
+  width: 20rem;
+  height: 25rem;
   position: relative;
   display: flex;
   text-align: center;
@@ -36,9 +44,14 @@ export const TipoProdutos = styled.a`
     transition: all .35s;
   }
 
+  @media screen and (max-width: 1420px) {
+    width: 15rem;
+    height: 20rem;
+}
   
   @media screen and (max-width: 600px) {
-      width: 70%;
+    width: 13rem;
+    height: 18rem;
   }
 `;
 
