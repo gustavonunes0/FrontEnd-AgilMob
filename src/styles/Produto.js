@@ -1,81 +1,89 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   margin-top: 7rem;
-  grid-template-columns: 30% 30% 30%;
-  justify-items: center;
-  align-items: center;
-  place-content: center;
-  padding: 2rem 12rem;
-  gap: .7rem;
+  padding: 0;
   background-color: #e6e1dd;
-
-  @media screen and (max-width: 1200px) {
-    padding: 2rem 6rem
-  }
-  
-  @media screen and (max-width: 1000px) {
-      grid-template-columns: 50% 50%;
-  }
-
-  @media screen and (max-width: 700px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-  }
 `;
 
-export const Produtos = styled.a`
-  width: 20rem;
-  height: 25rem;
-  position: relative;
+export const BoxPrincipal = styled.div`
   display: flex;
-  text-align: center;
-  background-color: #000;
-  opacity: 1;
-  border-radius: .5rem;
-
-  &:hover{
-    filter: brightness(.7);
-    transition: all .35s;
-  }
-
-  @media screen and (max-width: 1420px) {
-    width: 15rem;
-    height: 20rem;
-}
-  
-  @media screen and (max-width: 600px) {
-    width: 13rem;
-    height: 18rem;
-  }
+  padding: 3% 0%;
+  justify-content: center;
 `;
 
-export const ContainerHover = styled.div`
-  position: absolute;
-  background-color: #000;
-  opacity:.5;
-  z-index: 2 ;
-  border-radius: .5rem;
-  height:100%;
-  width: 100%;
-
+export const ContainerFotos = styled.div`
+  display: grid;
+  grid-template-columns: 17% 80%;
+  gap: 2%;
 `;
 
-export const SpanProdutos = styled.span`
-  font-size: 2.5rem;
-  width: 100%;
-  color: #fff;
-  font-weight: 600;
-  z-index: 3;
-  position: absolute;
-  top: 40%;
+export const InfosPrincipais = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 20rem !important;
+  white-space: break-spaces;
+  gap: .5rem
+`;
+export const Input1 = styled.input`
+    width: 60%;
+    background-color: transparent;
+    height: 2rem;
+    border: 1px solid #000;
+    font-size: .8rem;
+    padding-left: 1%;
 
-  @media screen and (max-width: 600px) {
-      font-size: 1.5rem;
-  }
+    &:focus{
+        outline-color: #202b50;
+    }
+    &::placeholder{
+        color: #a6a9aa;
+    }
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        font-size: 1rem;
+    }
+`;
+export const Botao = styled.button`
+    width:40%;
+    font-size: .6rem;
+    height: 2rem;
+    background-color: #202b50;
+    color: #e6e1dd;
+    border: none;
+    cursor: pointer;
+
+    
+    @media screen and (max-width: 800px) {
+        width: 50%;
+    }
+`;
+
+export const ColunaFotosSecundarias = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40rem;
+  gap: 2%
+`;
+
+export const ColunaFotoPrincipal = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40rem;
+`;
+export const ImagemPrincipal = styled.img`
+  height: 100%;
+  width: 95%;
+  object-fit: cover; 
+`;
+export const FotosSecundarias = styled.img`
+  height: 18.4%;
+  cursor: pointer;
 `;
