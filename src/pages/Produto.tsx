@@ -11,6 +11,9 @@ const Produto = () => {
     const [mainPhoto, setMainPhoto] = useState<string>('');
     const [selected, setSelected] = useState<string>('');
     const [showDetalhes, setShowDetalhes] = useState(false);
+    const [cep, setCep] = useState<string>('');
+    const [isFortalezaCep, setIsFortalezaCep] = useState<boolean>(false);
+    const [message, setMessage] = useState<string>('');
 
     const router = useRouter();
 
@@ -32,6 +35,25 @@ const Produto = () => {
     const handleSecondaryPhotoClick = (photoPath: string) => {
         setMainPhoto(photoPath);
         setSelected(photoPath);
+    };
+
+    const handleCepInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setCep(event.target.value);
+    };
+
+    const handleConsultarClick = () => {
+        const fortalezaCepPrefix = '60'; // Fortaleza CEPs
+        if (cep.length < 8) {
+            setMessage('CEP incompleto.');
+            return;
+        }
+        if (cep.startsWith(fortalezaCepPrefix)) {
+            setIsFortalezaCep(true);
+            setMessage('Entregamos no seu endereço!');
+        } else {
+            setIsFortalezaCep(false);
+            setMessage('Não atendemos na sua região!');
+        }
     };
 
     return (
@@ -64,18 +86,18 @@ const Produto = () => {
                             <S.ImagemPrincipal src={mainPhoto} />
                         </S.ColunaFotoPrincipal>
                         <div></div>
-                        <div style={{ display: 'flex', flexDirection: 'column', borderBottom: '1px solid #c6c6c6', width: '95%', alignItems: 'center'}}>
-                            <div style={{display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center'}}>
+                        <div style={{ display: 'flex', flexDirection: 'column', borderBottom: '1px solid #c6c6c6', width: '95%', alignItems: 'center' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', alignItems: 'center' }}>
                                 <span style={{ color: '#666666', fontWeight: '500', fontSize: '1rem' }}>Descrição técnica:</span>
-                                <button id='BtnAbrirDetalhes' onClick={() => setShowDetalhes(!showDetalhes)} style={{border: 'none', backgroundColor: 'transparent', color: '#666666', fontWeight: '500', fontSize: '1.8rem', margin: '0', cursor: 'pointer'}}>+</button>
+                                <button id='BtnAbrirDetalhes' onClick={() => setShowDetalhes(!showDetalhes)} style={{ border: 'none', backgroundColor: 'transparent', color: '#666666', fontWeight: '500', fontSize: '1.8rem', margin: '0', cursor: 'pointer' }}>+</button>
                             </div>
-                            <div id='detalhes' style={{display: showDetalhes ? 'flex' : 'none', flexDirection: 'column', textAlign: 'left', width: '100%'}}>
+                            <div id='detalhes' style={{ display: showDetalhes ? 'flex' : 'none', flexDirection: 'column', textAlign: 'left', width: '100%' }}>
                                 <ul style={{}}>
-                                    <li style={{listStyle: 'none',color: '#666666', fontWeight: '500', fontSize: '1rem'}}>- Teste</li>
-                                    <li style={{listStyle: 'none',color: '#666666', fontWeight: '500', fontSize: '1rem'}}>- Teste</li>
-                                    <li style={{listStyle: 'none',color: '#666666', fontWeight: '500', fontSize: '1rem'}}>- Teste</li>
-                                    <li style={{listStyle: 'none',color: '#666666', fontWeight: '500', fontSize: '1rem'}}>- Teste</li>
-                                    <li style={{listStyle: 'none',color: '#666666', fontWeight: '500', fontSize: '1rem'}}>- Teste</li>
+                                    <li style={{ listStyle: 'none', color: '#666666', fontWeight: '500', fontSize: '1rem' }}>- Teste</li>
+                                    <li style={{ listStyle: 'none', color: '#666666', fontWeight: '500', fontSize: '1rem' }}>- Teste</li>
+                                    <li style={{ listStyle: 'none', color: '#666666', fontWeight: '500', fontSize: '1rem' }}>- Teste</li>
+                                    <li style={{ listStyle: 'none', color: '#666666', fontWeight: '500', fontSize: '1rem' }}>- Teste</li>
+                                    <li style={{ listStyle: 'none', color: '#666666', fontWeight: '500', fontSize: '1rem' }}>- Teste</li>
                                 </ul>
                             </div>
                         </div>
@@ -89,9 +111,12 @@ const Produto = () => {
                             <img src='/ChamarVendedor.svg' style={{ width: '1.5rem' }} />
                         </div>
                         <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', alignItems: 'center' }}>
-                            <S.Input1 placeholder='CEP'></S.Input1>
-                            <S.Botao>CONSULTAR</S.Botao>
+                            <S.Input1 placeholder='CEP' value={cep} onChange={handleCepInputChange} />
+                            <S.Botao onClick={handleConsultarClick}>CONSULTAR</S.Botao>
                         </div>
+                        {message && (
+                            <p style={{ color: isFortalezaCep || cep.length > 8 ? 'green' : 'red' }}>{message}</p>
+                        )}
                     </S.InfosPrincipais>
                 </S.BoxPrincipal>
 

@@ -24,14 +24,6 @@ const productsData: Product[] = [
         id: 3,
         image: 'cadeira 3.jpg',
     },
-    {
-        id: 4,
-        image: 'cadeira 4.jpg',
-    },
-    {
-        id: 5,
-        image: 'cadeira 5.jpg',
-    },
 ];
 
 const ListaProdutos: React.FC = () => {

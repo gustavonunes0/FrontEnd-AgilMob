@@ -54,10 +54,12 @@ Aliquam pharetra laoreet orci quis scelerisque.</p>
                     </S.BoxValores>
                 </S.ContainerValores>
                 <S.ContainerGeral>
-                    <S.ContainerProduto>
-                        <img src='/Ativo 165.png' style={{width: '20rem', borderRadius: '1.1rem', height: '100%'}}/>
-                        <S.SpanProdutos>MESAS</S.SpanProdutos>
-                    </S.ContainerProduto>
+                    <a href='/listaProdutos'>
+                        <S.ContainerProduto>
+                            <img src='/Ativo 165.png' style={{width: '20rem', borderRadius: '1.1rem', height: '100%'}}/>
+                            <S.SpanProdutos>MESAS</S.SpanProdutos>
+                        </S.ContainerProduto>
+                    </a>
                     <S.ContainerProduto>
                         <img src='/Ativo 175.png' style={{width: '20rem', borderRadius: '1.1rem', height: '100%'}}/>
                         <S.SpanProdutos>CADEIRAS</S.SpanProdutos>
