@@ -1,19 +1,15 @@
 import React, { useState } from "react";
 import * as S from "./styles";
 
-import fotoAcao1 from "../../../public/imagemProjeto1.jpeg";
-import fotoAcao2 from "../../../public/imagemProjeto2.jpeg";
-import fotoAcao3 from "../../../public/imagemProjeto3.jpeg";
-import fotoAcao4 from "../../../public/imagemProjeto4.jpeg";
 
 const Carrossel = () => {
   const [testee, setTestee] = useState(0);
 
   const lista2 = [
-    fotoAcao1.src,
-    fotoAcao2.src,
-    fotoAcao3.src,
-    fotoAcao4.src
+    "/imagemProjeto1.jpeg",
+    "/imagemProjeto2.jpeg",
+    "/imagemProjeto3.jpeg",
+    "/imagemProjeto4.jpeg"
   ];
 
   const avancar = () => {
