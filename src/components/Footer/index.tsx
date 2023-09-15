@@ -8,7 +8,7 @@ const Footer = () => {
                 <S.FooterSubmenu>
                     <S.BoxFoto>
                         <S.FooterCompanyInfoIcon src={"/Ativo 174.png"}
-                            alt="logo"/>
+                            alt="Logo AgilMob"/>
                     </S.BoxFoto>
                     <S.FooterSubmenuItem style={{fontSize: '.86rem'}}>
                         Av. Lorem Ipsum, 123 - Abc, Fortaleza - CE
