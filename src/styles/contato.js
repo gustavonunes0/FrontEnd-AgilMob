@@ -12,6 +12,14 @@ export const Main = styled.main`
   background-color: #202b50;
 `;
 
+
+export const BotaoWpp = styled.a`
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;
+  z-index: 1000;
+`;
+
 export const Titulo = styled.h1`
   font-size: 2.3rem;
   width: 100%;
