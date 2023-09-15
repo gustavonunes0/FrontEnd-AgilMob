@@ -21,6 +21,13 @@ export const Main = styled.main`
   }
 `;
 
+export const BotaoWpp = styled.a`
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;
+  z-index: 1000;
+`;
+
 export const TipoProdutos = styled.a`
   width: 100%;
   height: auto;
