@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import * as S from "./styles";
 
-
 const Carrossel = () => {
   const [testee, setTestee] = useState(0);
 
