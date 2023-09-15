@@ -73,6 +73,13 @@ export const BoxDados = styled.div`
   gap: 1rem;
 `;
 
+export const BotaoWpp = styled.a`
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;
+  z-index: 1000;
+`;
+
 export const ContainerGeral = styled.div`
   display: flex;
   justify-content: space-around;
