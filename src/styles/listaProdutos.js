@@ -38,6 +38,13 @@ export const Main = styled.main`
   }
 `;
 
+
+export const BotaoWpp = styled.a`
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;
+  z-index: 1000;
+`;
 export const Produtos = styled.a`
   width: 16rem;
   height: 22rem;
