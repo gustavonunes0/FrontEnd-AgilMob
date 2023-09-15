@@ -7,6 +7,10 @@ import Footer from '@/components/Footer';
 
 const Produtos = () => {
 
+    const numeroWhatsApp = '+5585999556265'; 
+    const mensagemWhatsApp = 'Olá, estou interessado em algum produto seu!'; 
+
+    const linkWhatsApp = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensagemWhatsApp)}`;
     return (
         <>
             <Head>
@@ -41,6 +45,10 @@ const Produtos = () => {
                     <S.SpanProdutos>ROUPEIROS</S.SpanProdutos>
                 </S.TipoProdutos>
             </S.Main>
+            
+            <S.BotaoWpp href={linkWhatsApp} target="_blank" rel="noopener noreferrer">
+                <img src="/whats2.svg" alt="WhatsApp" />
+            </S.BotaoWpp>
             <Footer/>
         </>
     );
