@@ -95,7 +95,7 @@ export const ContainerGeral = styled.div`
   }
 `;
 
-export const ContainerProduto = styled.div`
+export const ContainerProduto = styled.a`
   background-color: #000;
   opacity: 1;
   height: auto;

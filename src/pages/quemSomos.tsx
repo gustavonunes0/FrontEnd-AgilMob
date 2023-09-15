@@ -42,28 +42,40 @@ const quemSomos = () => {
                         </S.Dados>
                     </S.BoxDados>
                     <div style={{width:'100%', paddingTop: '3rem', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                        <p style={{width: '60%'}}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut.</p>
+                        <p style={{width: '60%'}}> Durante nossos 10 anos de história, acompanhamos
+muitas mudanças no mercado de móveis em Fortaleza, acompanhamos várias altas e
+baixas do mercado imobiliário, a transformação do ambiente de trabalho para o home office
+e até mesmo a vinda e ida do COVID-19. Pudemos acompanhar de perto a transformação
+das preferencias do nosso cliente, que antes preferia ir ao local para comprar seus móveis e
+hoje espera ser bem atendido nos meios online e ter seu pedido entregue de forma rápida.
+Com isso nos adequamos aos novos gostos, aos novos objetivos e aos novos desejos de
+nosso cliente, com o claro objetivo de entregar a facilidade desejada e a velocidade
+esperada. Já são mais de 5 mil imóveis vendidos e 4 mil ambientes entregues.</p>
                     </div>
                 </div>
                 <S.ContainerValores>
                     <S.BoxValores>
                         <S.Valores>
                             <S.TituloValores>MISSÃO</S.TituloValores>
-                            <p style={{fontSize: '.8rem', width: '80%', alignSelf: 'center'}}>Aqui vai breve texto introdutório. Lorem ipsum
-dolor sit  amet, consectetur adipiscing elit.
-Aliquam pharetra laoreet orci quis scelerisque.</p>
+                            <p style={{fontSize: '.9rem', width: '80%', alignSelf: 'center'}}>Ajudar a inspirar e evoluir pequenas e grandes empresas, tornando o ambiente de trabalhos
+dos sonhos em realidade
+</p>
                         </S.Valores>
                         <S.Valores>
                             <S.TituloValores>VISÃO</S.TituloValores>
-                            <p style={{fontSize: '.8rem', width: '80%', alignSelf: 'center'}}>Aqui vai breve texto introdutório. Lorem ipsum
-dolor sit  amet, consectetur adipiscing elit.
-Aliquam pharetra laoreet orci quis scelerisque.</p>
+                            <p style={{fontSize: '.9rem', width: '80%', alignSelf: 'center'}}>Ser a empresa mais conhecida no ramo de móveis para escritório e a mais procurada no
+momento de mobiliar o ambiente de trabalho
+</p>
                         </S.Valores>
                         <S.Valores>
                             <S.TituloValores>VALORES</S.TituloValores>
-                            <p style={{fontSize: '.8rem', width: '80%', alignSelf: 'center'}}>Aqui vai breve texto introdutório. Lorem ipsum
-dolor sit  amet, consectetur adipiscing elit.
-Aliquam pharetra laoreet orci quis scelerisque.</p>
+                            <p style={{fontSize: '.9rem', width: '80%', alignSelf: 'center'}}>Confiança - Honramos nossa palavra através de atitudes éticas, honestas e transparentes;
+Comunicação Clara, objetiva e eficaz;
+Espírito de Equipe - Respeitamos o indivíduo e valorizamos o coletivo;
+Excelência Operacional - Fazer com agilidade e bem feito tudo o que fazemos;
+Foco no resultado - Com sentimento de dono, desenvolvimento contínuo, agilidade e
+criatividade.
+</p>
                         </S.Valores>
                     </S.BoxValores>
                 </S.ContainerValores>

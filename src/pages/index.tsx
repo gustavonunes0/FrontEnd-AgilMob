@@ -24,7 +24,10 @@ const Home = () => {
                 <S.ContainerFoto>
                     <img style={{width: '100%', height: '100%', zIndex: '0', objectFit: 'cover'}} src="/Ativo 173.png"/>
                     <S.SpanTitulo>Conheça a ÁgilMob.</S.SpanTitulo>
-                    <S.DescricaoTitulo>Aqui vai o texto de apoio. Lorem ipsum dolor sit amet, consectetur adipicsing elit. Aliquam phatera laoreet orci quis scelerisque</S.DescricaoTitulo>
+                    <S.DescricaoTitulo>A Agil Mob é uma empresa focada em entregar a solução de forma
+eficiente e rápida para o cliente. Especializada em móveis corporativos, se diferencia na
+entrega expressa em Fortaleza, por dispor de estrutura e estoque.
+</S.DescricaoTitulo>
                 </S.ContainerFoto>
                 <div style={{backgroundColor: '#b5272d', height: '5rem', width: '100%', display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center'}}>
                     <img src='/Ativo 163.png'/>
@@ -35,31 +38,33 @@ const Home = () => {
                     <S.BoxValores>
                         <S.Valores>
                             <S.TituloValores>MISSÃO</S.TituloValores>
-                            <p style={{fontSize: '.9rem', width: '80%', alignSelf: 'center'}}>Aqui vai breve texto introdutório. Lorem ipsum
-dolor sit  amet, consectetur adipiscing elit.
-Aliquam pharetra laoreet orci quis scelerisque.</p>
+                            <p style={{fontSize: '.9rem', width: '80%', alignSelf: 'center'}}>Ajudar a inspirar e evoluir pequenas e grandes empresas, tornando o ambiente de trabalhos
+dos sonhos em realidade
+</p>
                         </S.Valores>
                         <S.Valores>
                             <S.TituloValores>VISÃO</S.TituloValores>
-                            <p style={{fontSize: '.9rem', width: '80%', alignSelf: 'center'}}>Aqui vai breve texto introdutório. Lorem ipsum
-dolor sit  amet, consectetur adipiscing elit.
-Aliquam pharetra laoreet orci quis scelerisque.</p>
+                            <p style={{fontSize: '.9rem', width: '80%', alignSelf: 'center'}}>Ser a empresa mais conhecida no ramo de móveis para escritório e a mais procurada no
+momento de mobiliar o ambiente de trabalho
+</p>
                         </S.Valores>
                         <S.Valores>
                             <S.TituloValores>VALORES</S.TituloValores>
-                            <p style={{fontSize: '.9rem', width: '80%', alignSelf: 'center'}}>Aqui vai breve texto introdutório. Lorem ipsum
-dolor sit  amet, consectetur adipiscing elit.
-Aliquam pharetra laoreet orci quis scelerisque.</p>
+                            <p style={{fontSize: '.9rem', width: '80%', alignSelf: 'center'}}>Confiança - Honramos nossa palavra através de atitudes éticas, honestas e transparentes;
+Comunicação Clara, objetiva e eficaz;
+Espírito de Equipe - Respeitamos o indivíduo e valorizamos o coletivo;
+Excelência Operacional - Fazer com agilidade e bem feito tudo o que fazemos;
+Foco no resultado - Com sentimento de dono, desenvolvimento contínuo, agilidade e
+criatividade.
+</p>
                         </S.Valores>
                     </S.BoxValores>
                 </S.ContainerValores>
                 <S.ContainerGeral>
-                    <a href='/listaProdutos'>
-                        <S.ContainerProduto>
-                            <img src='/Ativo 165.png' style={{width: '20rem', borderRadius: '1.1rem', height: '100%'}}/>
-                            <S.SpanProdutos>MESAS</S.SpanProdutos>
-                        </S.ContainerProduto>
-                    </a>
+                    <S.ContainerProduto href='/listaProdutos'>
+                        <img src='/Ativo 165.png' style={{width: '20rem', borderRadius: '1.1rem', height: '100%'}}/>
+                        <S.SpanProdutos>MESAS</S.SpanProdutos>
+                    </S.ContainerProduto>
                     <S.ContainerProduto>
                         <img src='/Ativo 175.png' style={{width: '20rem', borderRadius: '1.1rem', height: '100%'}}/>
                         <S.SpanProdutos>CADEIRAS</S.SpanProdutos>
