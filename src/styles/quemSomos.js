@@ -10,6 +10,13 @@ export const Main = styled.main`
   background-color: #e6e1dd;
 `;
 
+
+export const BotaoWpp = styled.a`
+  position: fixed;
+  bottom: 20px; 
+  right: 20px;
+  z-index: 1000;
+`;
 export const ContainerValores = styled.div`
   width: 100%;
   margin: 0;
