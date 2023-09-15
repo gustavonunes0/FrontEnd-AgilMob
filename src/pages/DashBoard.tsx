@@ -3,7 +3,6 @@ import Head from 'next/head';
 import * as S from '../styles/DashBoard';
 import NavBar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import Carrossel from '@/components/SecondCarroussel';
 
 
 const Contato = () => {

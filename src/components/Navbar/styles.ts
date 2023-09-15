@@ -87,7 +87,7 @@ export const MenuToggle = styled.div`
   }
 `;
 
-export const MenuItems = styled.div`
+export const MenuItems = styled.div<{ isOpen: boolean }>`
   display: flex;
   align-items: center;
 

@@ -38,7 +38,7 @@ const quemSomos = () => {
                         </S.Dados>
                         <S.Dados>
                             <S.Infos>+ de 30</S.Infos>
-                            <S.Infos2><nobr>Anos de experiência</nobr></S.Infos2>
+                            <S.Infos2>Anos de experiência</S.Infos2>
                         </S.Dados>
                     </S.BoxDados>
                     <div style={{width:'100%', paddingTop: '3rem', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>

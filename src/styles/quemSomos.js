@@ -162,6 +162,10 @@ export const Infos2 = styled.h2`
   @media screen and (max-width: 600px) {
     font-size: 1.5rem;
   }
+
+  &:last-child {
+      word-break: keep-all;
+    }
 `;
 
 export const DescricaoTitulo = styled.p`

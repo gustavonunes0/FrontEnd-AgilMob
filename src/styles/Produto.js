@@ -8,18 +8,51 @@ export const Main = styled.main`
   margin-top: 7rem;
   padding: 0;
   background-color: #e6e1dd;
+  @media screen and (max-width: 700px) {
+    justify-content: center;
+  }
 `;
 
 export const BoxPrincipal = styled.div`
   display: flex;
   padding: 3% 0%;
   justify-content: center;
+
+  @media screen and (max-width: 1000px) {
+    padding: 2%;
+  }
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3% 0%;
+  }
 `;
 
 export const ContainerFotos = styled.div`
   display: grid;
   grid-template-columns: 17% 80%;
   gap: 2%;
+
+  @media screen and (max-width: 1400px) {
+  }
+
+  @media screen and (max-width: 1200px) {
+  }
+  
+  @media screen and (max-width: 1000px) {
+  }
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 `;
 
 export const InfosPrincipais = styled.div`
@@ -27,8 +60,13 @@ export const InfosPrincipais = styled.div`
   flex-direction: column;
   width: 20rem !important;
   white-space: break-spaces;
-  gap: .5rem
+  gap: .5rem;
+  
+  @media screen and (max-width: 700px) {
+    text-align: center !important;
+  }
 `;
+
 export const Input1 = styled.input`
     width: 60%;
     background-color: transparent;
@@ -69,7 +107,18 @@ export const ColunaFotosSecundarias = styled.div`
   flex-direction: column;
   width: 100%;
   height: 40rem;
-  gap: 2%
+  gap: 2%;
+
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5.5rem;
+    overflow-x: scroll;
+    width: 90vw;
+    padding-left: 4rem;
+  }
 `;
 
 export const ColunaFotoPrincipal = styled.div`
@@ -77,13 +126,25 @@ export const ColunaFotoPrincipal = styled.div`
   flex-direction: column;
   width: 100%;
   height: 40rem;
+  
+  @media screen and (max-width: 700px) {
+    height: 20rem;
+  }
 `;
+
 export const ImagemPrincipal = styled.img`
   height: 100%;
   width: 95%;
   object-fit: cover; 
+
+  @media screen and (max-width: 700px) {
+    width: 90vw;
+  }
 `;
 export const FotosSecundarias = styled.img`
   height: 18.4%;
   cursor: pointer;
+  @media screen and (max-width: 700px) {
+    height: 98%;
+  }
 `;
