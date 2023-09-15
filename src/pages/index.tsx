@@ -89,7 +89,7 @@ criatividade.
                 </div>
             </S.Main>
             <S.BotaoWpp href={linkWhatsApp} target="_blank" rel="noopener noreferrer">
-                <img src="/whatsapp.png" alt="WhatsApp" />
+                <img src="/whats2.svg" alt="WhatsApp" />
             </S.BotaoWpp>
             <Footer/>
         </>
