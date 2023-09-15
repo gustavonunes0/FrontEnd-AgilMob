@@ -8,6 +8,10 @@ import Carrossel from '@/components/Carrossel';
 
 const quemSomos = () => {
 
+    const numeroWhatsApp = '+5585999556265'; 
+    const mensagemWhatsApp = 'Olá, estou interessado em algum produto seu!'; 
+
+    const linkWhatsApp = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensagemWhatsApp)}`;
     return (
         <>
             <Head>
@@ -83,6 +87,10 @@ criatividade.
                     <Carrossel/>
                 </div>
             </S.Main>
+            
+            <S.BotaoWpp href={linkWhatsApp} target="_blank" rel="noopener noreferrer">
+                <img src="/whats2.svg" alt="WhatsApp" />
+            </S.BotaoWpp>
             <Footer/>
         </>
     );
