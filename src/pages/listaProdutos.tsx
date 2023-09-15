@@ -40,6 +40,11 @@ const ListaProdutos: React.FC = () => {
         });
     };
 
+    const numeroWhatsApp = '+5585999556265'; 
+    const mensagemWhatsApp = 'Olá, estou interessado em algum produto seu!'; 
+
+    const linkWhatsApp = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensagemWhatsApp)}`;
+    
     return (
         <>
             <Head>
@@ -62,6 +67,9 @@ const ListaProdutos: React.FC = () => {
                     </S.Produtos>
                 ))}
             </S.Main>
+            <S.BotaoWpp href={linkWhatsApp} target="_blank" rel="noopener noreferrer">
+                <img src="/whats2.svg" alt="WhatsApp" />
+            </S.BotaoWpp>
             <Footer />
         </>
     );
