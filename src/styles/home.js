@@ -142,7 +142,7 @@ export const SpanProdutos = styled.span`
 `;
 export const SpanTitulo = styled.span`
   font-size: 4.2rem;
-  width: 25%;
+  width: 35%;
   color: #fff;
   font-weight: 700;
   z-index: 1;
